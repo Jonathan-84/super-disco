@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -26,137 +28,88 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <!-- Create the hour rows for 9am- 5pm-->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 9:00 AM </span>
+      <div id="hour-9" class="row time-block">
+        <div class="col-md-1 hour">
+          9:00 AM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 10:00 AM </span>
-        </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 11:00 AM </span>
+      <div id="hour-10" class="row time-block">
+        <div class="col-md-1 hour">
+          10:00 AM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 12:00 PM </span>
+      <div id="hour-11" class="row time-block">
+        <div class="col-md-1 hour">
+          11:00 AM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 1:00 PM </span>
+      <div id="hour-12" class="row time-block">
+        <div class="col-md-1 hour">
+          12:00 PM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 2:00 PM </span>
+      <div id="hour-13" class="row time-block">
+        <div class="col-md-1 hour">
+          1:00 PM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 3:00 PM </span>
+      <div id="hour-14" class="row time-block">
+        <div class="col-md-1 hour">
+          2:00 PM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 4:00 PM </span>
+      <div id="hour-15" class="row time-block">
+        <div class="col-md-1 hour">
+          3:00 PM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 5:00 PM </span>
+      <div id="hour-16" class="row time-block">
+        <div class="col-md-1 hour">
+          4:00 PM
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <span class="hour"> 6:00 PM </span>
+      <div id="hour-17" class="row time-block">
+        <div class="col-md-1 hour">
+          5:00 pm
         </div>
-        <div class="col-sm-8">
-         <ul id="scheduled">
-             <span class="text-area">Appointment</span>
-         </ul>
-        </div>
-        <div class="col-sm-2">
-          <button type="button" id="remove-tasks" class="btn btn-primary btn-sm">Delete</button>
-        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
+      <div id="hour-18" class="row time-block">
+        <div class="col-md-1 hour">
+          6:00 pm
+        </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
