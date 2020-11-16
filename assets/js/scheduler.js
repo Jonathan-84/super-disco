@@ -6,17 +6,43 @@ const date = now.format();
 document.getElementById("currentDay").innerHTML= now.format("dddd, MMMM Do YYYY");
 
 //functions to create: saveAppt(), loadAppt() for local storage, auditAppt()
+//need to fix how the data is rendered
+
+//loadStorage = localStorage.getItem(value,time);
+
+//function renderEvents(loadStorage){
+//$('.description').empty()
+
+//for (var i = 0; i < loadStorage.length; i++) {
+ // let toDoItem= $('<p>');
+ // toDoItem.text(list[i]);
+
+  //$('.description').append(toDoItem);
+//}
+//}
+ // if (loadStorage == null || loadStorage == "null"){
+  //  $("value,time").appendTo("description");
+  
+ // } 
+  //else {
+ // //  localStorage.getItem(value, time)
+//}
+ // console.log(renderEvents);
+//}; // end function 
 
 $(document).ready(function() {
 
   $(".saveBtn").on("click", function (){
     let value = $(this).siblings(".description").val()
     let time = $(this).parent().attr("id")
-    localStorage.setItem(value,time);
-    });
-  
+  localStorage.setItem(time,value);
+console.log(localStorage);
+  });
+
+    //audit current time vs current scheduling block
     function timeUpdate (){
       let currentTime=moment().hours();
+      //console.log(currentTime);
       //loop of time
       $(".time-block").each(function() {
         let blockTime =parseInt($(this).attr("id").split("-")[1]);
@@ -54,14 +80,18 @@ console.log(interval);
     $("#hour-18 .description").val(localStorage.getItem("hour-18"));
   });
 
-function loadStorage(){
-  let event = localStorage.getItem(value,time);
-  if (event == null || event=="null"){
-    localStorage.setItem(value,time);
-  } else {
-    localStorage.getItem(value,time);
-  }
-}
+ 
+
+//function loadStorage(){
+  //let event = localStorage.getItem(value,time);
+  //if (event == null || event=="null"){
+   // localStorage.setItem(value,time);
+  //} else {
+   // localStorage.getItem(value,time);
+  //}
+  
+
+
   //let appointment= JSON.parse(localStorage.getItem("appointment"))
 //if (appointment == null && appointment == 'null') {
    // events.push(currentEvent)
@@ -78,7 +108,7 @@ function loadStorage(){
 
 
 
-
+}
 $('description').on('click', function(event) {
 event.preventDefault();
 let currentEvent= $('description').val().trim();
