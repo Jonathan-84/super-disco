@@ -8,4 +8,4 @@ It's easy to lose track of your day during a busy schedule, this will help you o
 -Using Local Storage for saves/ retrieval, you can access your schedule even after browser refresh
 -Color coding as mentioned above
 
-
+[Check Out the Scheduler](https://raw.githubusercontent.com/Jonathan-84/super-disco/master/assets/Scheduler%20Page.png)
