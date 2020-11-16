@@ -9,3 +9,5 @@ It's easy to lose track of your day during a busy schedule, this will help you o
 -Color coding as mentioned above
 
 [Check Out the Scheduler](https://raw.githubusercontent.com/Jonathan-84/super-disco/master/assets/Scheduler%20Page.png)
+
+//
